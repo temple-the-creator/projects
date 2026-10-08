@@ -8,7 +8,7 @@
   --color-surface-alt: #eef1f5;
   --color-text: #1a1d23;
   --color-text-muted: #5f6b7a;
-  --color-accent: #2f6fed;
+  --color-accent: #3e72dc;
   --color-error: #c0392b;
   --color-border: #dde2e8;
   
@@ -42,8 +42,13 @@ body{
 }
 
 /*general styles*/
-.header__logo{
+.header{
+  display: flex;
+  justify-content: space-between;
   padding: var(--space-sm);
+}
+
+.header__logo{
   display: flex;
 }
 
@@ -54,7 +59,40 @@ body{
 
 .header__logo-title{
   margin-left: var(--space-sm);
+  font-weight: var(--font-weight-regular);
 }
+
+.temperature-unit{
+  margin-top: var(--space-sm);
+}
+
+.temperature-unit__cs{
+  border: 2px solid var(--color-border);
+  background-color: none;
+  padding-right:10px;
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.temperature-unit__fh{
+  border: 2px solid var(--color-border);
+  background-color: none;
+  padding-right: 10px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.temperature-unit input{
+  opacity: 0;
+}
+
+.temperature-unit label:has(input:checked){
+  background-color: var(--color-accent);
+}
+
+
 
 
 
