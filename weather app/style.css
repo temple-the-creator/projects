@@ -104,13 +104,13 @@ body{
 
 .search{
   display: flex;
-  gap: 1rem;
+  gap: var(--space-md);
 }
 
 .search__bar{
  flex-grow: 1;
  width: 30px;
-  height: 30px;
+ height: 30px;
  border: 1px solid var(--color-border);
  border-radius: 10px;
  background-color: transparent;
