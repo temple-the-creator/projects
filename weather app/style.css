@@ -107,6 +107,7 @@ body{
   grid-template-columns: 1fr auto;
   column-gap: var(--space-sm);
   row-gap: var(--space-md);
+  margin-bottom: var(--space-md);
 }
 
 .search__bar{
@@ -151,6 +152,24 @@ body{
   border-radius: 10px;
   margin: 2px;
 }
+
+.city{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-surface);
+  border-radius:20px ;
+  padding: var(--space-md);
+}
+
+.city__temperature{
+  font-size: 4rem;
+}
+
+.city__weather-icon{
+  width: 30px;
+  height: 30px;
+}
+
 
 
 
