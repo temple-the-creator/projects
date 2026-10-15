@@ -159,16 +159,64 @@ body{
   background-color: var(--color-surface);
   border-radius:20px ;
   padding: var(--space-md);
+  margin-bottom: var(--space-md);
 }
 
 .city__temperature{
   font-size: 4rem;
 }
 
-.city__weather-icon{
-  width: 30px;
-  height: 30px;
+.city__date{
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
 }
+
+.city__weather{
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+}
+
+.city__high-low{
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+.city__weather-icon{
+  width: 20px;
+  height: 20px;
+}
+
+.apr-temperature{
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.humidity,.wind-speed,.feel-like{
+  background-color: var(--color-surface);
+  padding: var(--space-sm);
+  border-radius: var(--radius-card);
+  flex-grow: 1;
+}
+
+.humidity__icon,.wind-speed__icon,.feel-like__icon{
+  width: 15px;
+  height: 15px;
+}
+
+.humidity__heading,.wind-speed__heading,.feel-like__heading{
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+.humidity__value,.wind-speed__value,.feel-like__value{
+  display: block;
+  font-weight: var(--font-weight-medium);
+}
+
+
+
+
 
 
 
